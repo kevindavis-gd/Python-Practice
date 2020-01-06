@@ -2,7 +2,6 @@
 This program creates multiple choice questions about state capitals.
 It prints out 35 uniquly random quizzes, with the questions
 in different order. It also creates an answer sheet for each quiz.
-
 '''
 from pathlib import Path
 import os
@@ -65,7 +64,7 @@ for quizNum in range(35):
         random.shuffle(answerOptions)
 
         #write questions to paper
-        quizFile.write(f'{questionNum + 1}. What is the capital of{states[questionNum]}?\n')
+        quizFile.write(f'{questionNum + 1}. What is the capital of {states[questionNum]}?\n')
         #write different choices
         for i in range(4):
             quizFile.write(f"{'ABCD'[i]}. { answerOptions[i]}\n")
