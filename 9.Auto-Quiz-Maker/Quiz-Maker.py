@@ -1,3 +1,9 @@
+'''
+This program creates multiple choice questions about state capitals.
+It prints out 35 uniquly random quizzes, with the questions
+in different order. It also creates an answer sheet for each quiz.
+
+'''
 from pathlib import Path
 import os
 import shelve
